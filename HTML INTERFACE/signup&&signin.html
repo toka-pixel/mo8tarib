@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title Of Page -->
+    <title>Sign House Rental</title>
+
+    <!-- Site Icon -->
+    <link rel="icon" type="image/png" href="../images/icons/Mo8treb.png" />
+
+    <!-- CSS Links -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/signup&&signin.css" rel="stylesheet">
+    <link href="../css/aos.css" rel="stylesheet">
+
+    <!-- Fonts And Icons Links -->
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Sign Page -->
+    <div class="sign">
+        <div class="container tab user-content col-lg-12 col-md-12 col-sm-12" id='UserContent' data-aos="fade-down-left"
+            data-aos-duration="1500">
+            <!-- Overlay Of Sign Page -->
+            <div class="overlay" id="overlay">
+                <!-- Overlay Of Sign IN -->
+                <div class="sign-in" id="sign-in">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="switch-button" id="slide-right-button">Sign In</button>
+                </div>
+                <!-- Overlay Of Sign UP -->
+                <div class="sign-up" id="sign-up">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start a journey with us</p>
+                    <button class="switch-button" id="slide-left-button">Sign Up</button>
+                </div>
+            </div>
+            <!-- Forms of Sign Page -->
+            <div class="form">
+                <!-- Content Of Sign IN -->
+                <div class="sign-in" id="sign-in-info">
+                    <h1>Sign In</h1>
+                    <!-- Social Icons Of Sign IN -->
+                    <div class="social-media-buttons">
+                        <div class="icon">
+                            <a href="https://www.facebook.com/" class="face-social-item">
+                                <img src="../images/icons/facebook-icon-gold-2.png" alt="Facebook" class="faceicon"
+                                    style="width: 40px; height: 40px; border-radius: 50%;">
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://mail.google.com/" class="google-social-item">
+                                <img src="../images/icons/09572b43425777b456364136047a522f (5).jpg" alt="Facebook"
+                                    class="faceicon" style="width: 40px; height: 40px; border-radius: 50%;">
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/feed/" class="linked-social-item">
+                                <img src="../images/icons/09572b43425777b456364136047a522f (6).jpg" alt="Facebook"
+                                    class="faceicon" style="width: 40px; height: 40px; border-radius: 50%;">
+                            </a>
+                        </div>
+                    </div>
+                    <p class="small">or use your email account:</p>
+                    <!-- Sign IN Form -->
+                    <form id="sign-in-form">
+                        <!-- Email Input -->
+                        <input class="userinput" type="email" name="email" placeholder="E-mail Address" required
+                            autocomplete="off" required>
+                        <!-- Passward Input -->
+                        <div style="margin-left: -50px;">
+                            <input class="passinput" type="password" name="password" id="pass" placeholder="Password"
+                                required autocomplete="off" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                            <i class="fas fa-eye" onclick="myPassFunction()"
+                                style="margin-left: -70px; cursor: pointer;"></i>
+                        </div>
+                        <br><br>
+                        <!-- Forget Link -->
+                        <a href="#" class="fp-link">
+                            <i class="forgot-password">Forgot your password?</i>
+                        </a>
+                        <!-- Sign in Button -->
+                        <div class="btndiv">
+                            <button class="signbtn signinbtn">
+                                <a href="Pro1.html" class="signtxt in">
+                                    Sign In
+                                </a>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Content Of Sign UP -->
+                <div class="sign-up" id="sign-up-info">
+                    <h1>Create Account</h1>
+                    <!-- Social Icons Of Sign UP -->
+                    <div class="social-media-buttons">
+                        <div class="icon">
+                            <a href="https://www.facebook.com/" class="face-social-item">
+                                <img src="../images/icons/facebook-icon-gold-2.png" alt="Facebook" class="faceicon"
+                                    style="width: 40px; height: 40px; border-radius: 50%;">
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://mail.google.com/" class="google-social-item">
+                                <img src="../images/icons/09572b43425777b456364136047a522f (5).jpg" alt="Facebook"
+                                    class="faceicon" style="width: 40px; height: 40px; border-radius: 50%;">
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/feed/" class="linked-social-item">
+                                <img src="../images/icons/09572b43425777b456364136047a522f (6).jpg" alt="Facebook"
+                                    class="faceicon" style="width: 40px; height: 40px; border-radius: 50%;">
+                            </a>
+                        </div>
+                    </div>
+                    <p class="small">or use your email for registration:</p>
+                    <!-- Sign UP Form -->
+                    <form id="sign-up-form">
+                        <!-- User Name Input -->
+                        <input class="Nameinput  signupinput" type="text" name="name" placeholder="User Name" required
+                            autocomplete="off" required>
+                        <!-- Email Input -->
+                        <input class="E-mailinput  signupinput" type="email" name="email" placeholder="E-mail" required
+                            autocomplete="off" required>
+                        <!-- Passward Input -->
+                        <div style="margin-left: -50px;">
+                            <input class="Passwordinput  signupinput" type="password" name="password" id="pass2"
+                                placeholder="Password" required autocomplete="off" required
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                            <i class="fas fa-eye" onclick="myPass2Function()"
+                                style="margin-left: -70px; cursor: pointer;"></i>
+                        </div>
+                        <!-- Image File Input -->
+                        <input type="file" id="inpFile" hidden="hidden">
+                        <button type="button" id="custom-button">Choose A File</button><br>
+                        <span id="custom-text">No File Choosen, yet.</span>
+                        <div class="image-preview" id="imagePreview">
+                            <img src="" class="image-preview_image">
+                            <span class="image-preview_default_text">Image Preview</span>
+                        </div>
+                        <!-- Sign up Button -->
+                        <button class="signbtn signupbtn">
+                            <a class="signtxt up" href="#userInfoContent"
+                                onclick="document.getElementById('userInfoContent').style.display='block'">
+                                Sign Up
+                            </a>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Information Page -->
+    <div class="userInfoContent" id="userInfoContent">
+        <!-- Close Icon -->
+        <span onclick="document.getElementById('userInfoContent').style.display='none'" class="close">
+            <i class="fa fa-times"></i>
+        </span>
+        <!-- Contant Of User Info Page -->
+        <div class="userInfoDetail">
+            <!-- Wave Image -->
+            <img class="wave" src="../images/sign/wave.png">
+            <div class="container">
+                <!-- Lap And Phone Image -->
+                <div class="img">
+                    <img src="../images/sign/lap.svg">
+                </div>
+                <!-- User Info Form -->
+                <div class="userInfo-content">
+                    <form>
+                        <h3 class="title">Please <span> Maruoma </span> Fill This Data</h3>
+                        <div class="input-div one">
+                            <div class="i">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Phone Number</h5>
+                                <input type="tel" class="input" required autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="input-div sec">
+                            <div class="i">
+                                <i class="fas fa-stopwatch-20"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Age</h5>
+                                <!-- oninput="validity.valid||(value='');" -->
+                                <input type="number" class="input" min="17" max="100" required autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="input-div sec">
+                            <div class="i">
+                                <i class="material-icons">&#xeb45;</i>
+                            </div>
+                            <div class="div">
+                                <h5>Government</h5>
+                                <input type="text" class="input" required autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="input-div sec">
+                            <div class="i">
+                                <i class="fas fa-city"></i>
+                            </div>
+                            <div class="div">
+                                <h5>City</h5>
+                                <input type="text" class="input" required autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="input-div sec">
+                            <div class="i">
+                                <i class="fas fa-house-user"></i>
+                            </div>
+                            <div class="div">
+                                <h5>House</h5>
+                                <input type="text" class="input" required autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="input-div sec">
+                            <div class="i">
+                                <i class="fas fa-street-view"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Street</h5>
+                                <input type="text" class="input" required autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="input-div sec">
+                            <div class="i">
+                                <i class="fab fa-vimeo-v"></i>
+                            </div>
+                            <div class="div">
+                                <h5>Village</h5>
+                                <input type="text" class="input">
+                            </div>
+                        </div>
+                        <a href="Pro1.html" onclick="location.href = 'Pro1.html'">
+                            <input type="submit" class="btn" value="Add Information">
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Links -->
+    <script src="../js/signup&&signin.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

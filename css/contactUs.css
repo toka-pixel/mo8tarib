@@ -1,0 +1,497 @@
+/*************************************************************************/
+
+/*----------------[ Left NavBar ]-------------- */
+
+.twoNavs .navbar {
+    margin-left: -20px;
+    z-index: 1000;
+}
+
+/*************************************************************************/
+
+/*----------------[ Photo Background ]-------------- */
+
+.contact main .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    margin-left: 235px;
+}
+
+.contact main .bg .bgside {
+    position: absolute;
+    margin-top: 70px;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 93%;
+    background: url(../images/contactus/hr.png);
+    background-size: cover;
+}
+
+.contact main .bg .leftside {
+    clip-path: polygon(0% 0%, 60% 0%, 48% 11%, 48% 20%, 48% 29%, 48% 39%, 32% 55%, 48% 61%, 48% 78%, 48% 87%, 60% 98%, 0% 100%);
+}
+
+.contact main .bg .rightside {
+    clip-path: polygon(100% 0%, 60% 0%, 48% 11%, 48% 20%, 48% 29%, 48% 39%, 32% 55%, 48% 61%, 48% 78%, 48% 87%, 60% 98%, 100% 100%);
+}
+
+/*---------[ Responsive Photo Background ]------------ */
+
+@media (max-width: 1300px) {
+    .contact main .bg .bgside {
+        margin-top: 75px;
+        width: 81%;
+        height: 92%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contact main .bg .bgside {
+        margin-top: 140px;
+        width: 80%;
+        height: 83.5%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .contact main .bg .bgside {
+        margin-top: 130px;
+        height: 73%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact main .bg .bgside {
+        margin-top: 170px;
+        height: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    .contact main .bg .bgside {
+        margin-top: 190px;
+        width: 76%;
+        height: 53%;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact main .bg .bgside {
+        margin-top: 220px;
+        height: 47%;
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact main .bg .bgside {
+        margin-top: 120px;
+        height: 61.5%;
+        margin-left: -270px;
+        width: 110%;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact main .bg .bgside {
+        margin-top: 150px;
+        height: 56%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact main .bg .bgside {
+        margin-top: 180px;
+        height: 48%;
+    }
+}
+
+/***************************************************************************/
+
+/*----------------[ Contact Details ]-------------- */
+
+.contact main .content {
+    background: var(--bg-primary);
+    padding: 100px;
+    padding-top: 160vh;
+    margin-left: 5rem;
+}
+
+.contact main .content .content-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: linear-gradient(-125deg, var(--bg-secondary), #b68233, #573911, #ffa41b, #be7622ec, #b68233);
+}
+
+.contact main .content .content-section::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--bg-secondary), #b68233, #573911, #ffa41b, #be7622ec, #b68233);
+}
+
+.contact main .content .content-section .container {
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+}
+
+/*----------------[ Contact Info ]-------------- */
+
+.contact main .content .content-section .container .contactInfo {
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    width: calc(100% - 800px);
+    background: #ffa41b;
+    background: linear-gradient(145deg, var(--bg-secondary), #b68233, #ffa41b, #be7622ec);
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact main .content .content-section .container .contactInfo h2 {
+    color: #ffa41b;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.contact main .content .content-section .container .contactInfo .info {
+    position: relative;
+    margin-top: 30px;
+    margin-left: -40px;
+}
+
+.contact main .content .content-section .container .contactInfo .info li {
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: center;
+}
+
+.contact main .content .content-section .container .contactInfo .info li span:nth-child(1) {
+    width: 30px;
+    min-width: 30px;
+}
+
+.contact main .content .content-section .container .contactInfo .info li span:nth-child(1) i {
+    opacity: 0.7;
+    color: var(--bg-secondary);
+    margin-left: -15px;
+}
+
+.contact main .content .content-section .container .contactInfo .info li span:nth-child(2),
+.contact main .content .content-section .container .contactInfo .info li span:nth-child(2) a {
+    color: var(--bg-primary);
+    font-weight: 500;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.contact .container .contactInfo .info li a div{
+    margin-top: -23px;
+    margin-left: 170px;
+}
+
+.contact main .content .content-section .container .contactInfo .info li:hover span:nth-child(1) i,
+ .contact main .content .content-section .container .contactInfo .info li:hover span:nth-child(2),
+  .contact main .content .content-section .container .contactInfo .info li span:nth-child(2) a {
+    opacity: 1;
+    color: var(--bg-primary);
+}
+
+/*----------------[ Contact Social ]-------------- */
+
+.contact main .content .content-section .container .contactInfo .social {
+    position: relative;
+    display: flex;
+    margin-left: -30px;
+}
+
+.contact main .content .content-section .container .contactInfo .social li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.contact main .content .content-section .container .contactInfo .social li a {
+    text-decoration: none;
+    color: var(--bg-secondary);
+    opacity: 0.7;
+}
+
+.contact main .content .content-section .container .contactInfo .social li a:hover {
+    opacity: 1;
+}
+
+/*----------------[ Contact Form ]---------------- */
+
+.contact main .content .content-section .container .contactForm {
+    position: absolute;
+    padding: 70px 50px;
+    background: var(--bg-secondary);
+    opacity: 0.8;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.contact main .content .content-section .container .contactForm h2 {
+    color: #ffa41b;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.contact main .content .content-section .container .contactForm .form {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.contact main .content .content-section .container .contactForm .form .contactInput {
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+.contact main .content .content-section .container .contactForm .form .smallInput {
+    width: 47%;
+}
+
+.contact main .content .content-section .container .contactForm .form .largeInput {
+    width: 100%;
+}
+
+.contact main .content .content-section .container .contactForm .form .contactInput input, .contact main .content .content-section .container .contactForm .form .contactInput textarea {
+    width: 100%!important;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    resize: none;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+    padding-left: 5px;
+}
+
+.contact main .content .content-section .container .contactForm .form .contactInput textarea {
+    min-height: 120px;
+}
+
+.contact main .content .content-section .container .contactForm .form .contactInput span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.3s;
+    pointer-events: none;
+    padding-left: 10px;
+}
+
+.contact main .content .content-section .container .contactForm .form .contactInput input:focus~span, .contact main .content .content-section .container .contactForm .form .contactInput textarea:focus~span, .contact main .content .content-section .container .contactForm .form .contactInput input:valid~span, .contact main .content .content-section .container .contactForm .form .contactInput textarea:valid~span {
+    transform: translateY(-20px);
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ffa41b;
+    margin-top: -10px;
+}
+
+.contact main .content .content-section .container .contactForm .form .contactInput input[type="submit"] {
+    position: relative;
+    cursor: pointer;
+    background: #ffa41b;
+    color: var(--bg-primary);
+    opacity: 0.9;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.contact main .content .content-section .container .contactForm .form .contactInput input[type="submit"]:hover {
+    background-color: var(--bg-primary);
+    color: #ffa41b;
+}
+
+/*---------[ Responsive Contact Details ]------------ */
+
+@media (max-width: 1500px) {
+    .contact main .content {
+        margin-right: -2rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .contact main .content {
+        margin-right: -4rem;
+    }
+    .contact main .content .content-section .container .contactForm {
+        width: calc(100% - 190px);
+    }
+}
+
+@media (max-width: 1300px) {
+    .contact main .content {
+        margin-right: -5.5rem;
+    }
+    .contact main .content .content-section .container .contactInfo {
+        margin-left: 15px;
+    }
+    .contact .container .contactInfo .info li a div{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contact main .content {
+        padding-top: 140vh;
+        margin-right: -5rem;
+        margin-left: 3rem;
+    }
+    .contact main .content .content-section .container .contactInfo {
+        margin-left: 65px;
+        width: calc(100% - 795px);
+    }
+    .contact main .content .content-section .container .contactForm {
+        width: calc(100% - 240px);
+    }
+    /* .contact main .content .content-section .container .contactInfo .info li span:nth-child(2) a {
+        width: 50px;
+    } */
+}
+
+@media (max-width: 1100px) {
+    .contact main .content {
+        padding-top: 135vh;
+    }
+    .contact main .content .content-section .container .contactInfo {
+        margin-left: 155px;
+    }
+    .contact main .content .content-section .container .contactForm {
+        width: calc(100% - 370px);
+        padding-left: 300px;
+        margin-left: 180px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact main .content {
+        padding-top: 125vh;
+    }
+    .contact main .content .content-section .container .contactInfo {
+        margin-left: 195px;
+    }
+    .contact main .content .content-section .container .contactForm {
+        width: calc(100% - 450px);
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 900px) {
+    .contact main .content {
+        padding-top: 120vh;
+    }
+    .contact main .content .content-section .container .contactInfo {
+        margin-left: 250px;
+        width: calc(100% - 835px);
+    }
+    .contact main .content .content-section .container .contactInfo .social{
+        margin-left: -50px;
+    }
+    .contact main .content .content-section .container .contactForm {
+        width: calc(100% - 550px);
+        padding-left: 260px;
+        padding-right: 20px;
+        margin-left: 270px;
+        padding-top: 50px;
+    }
+    .contact main .content .content-section .container .contactForm .form .contactInput {
+        margin-left: 10px;
+        margin-bottom: 25px;
+    }
+    .contact main .content .content-section .container .contactForm .form div:nth-child(1) {
+        margin-top: -15px;
+    }
+    .contact main .content .content-section .container .contactForm .form .smallInput {
+        width: 97%;
+    }
+    .contact main .content .content-section .container .contactForm .form .contactInput input[type="submit"] {
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact main .content {
+        margin-right: -7rem;
+        margin-left: -6.5rem;
+        padding-top: 115vh;
+    }
+    .contact main .content .content-section .container .contactInfo {
+        width: calc(100% - 795px);
+        margin-left: 220px;
+    }
+    .contact main .content .content-section .container .contactForm {
+        width: calc(100% - 520px);
+    }
+}
+
+@media (max-width: 600px) {
+    .contact main .content {
+        margin-right: -6.3rem;
+        margin-left: -6.3rem;
+    }
+    .contact main .content .content-section .container .contactInfo {
+        width: calc(100% - 825px);
+        margin-left: 270px;
+    }
+    .contact main .content .content-section .container .contactInfo .social{
+        margin-left: -50px;
+    }
+    .contact main .content .content-section .container .contactForm {
+        width: calc(100% - 600px);
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact main .content .content-section .container .contactInfo {
+        width: calc(100% - 865px);
+        margin-left: 300px;
+    }
+    .contact main .content .content-section .container .contactInfo .social{
+        margin-left: -70px;
+    }
+    .contact main .content .content-section .container .contactForm {
+        width: calc(100% - 650px);
+        margin-left: 320px;
+        padding-left: 220px;
+    }
+    .contact main .content .content-section .container .contactInfo .info li {
+        margin-left: -10px;
+    }
+}

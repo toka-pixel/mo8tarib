@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title Of Page -->
+    <title>User Profile</title>
+    <!-- Site Icon -->
+    <link rel="icon" type="image/png" href="../images/icons/Mo8treb.png" />
+    <!-- CSS Links -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/glider.css" rel="stylesheet">
+    <link href="../css/Pro1.css" rel="stylesheet">
+    <link href="../css/userProfile.css" rel="stylesheet">
+
+    <!-- Fonts And Icons Links -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <section>
+        <!-- Content Of User Profile -->
+        <div class="userDetails">
+            <div>
+                <img src="../images/basic/profile.jpg" class="userprofileimg">
+                <h5>profile</h5>
+                <h6><i class="fa fa-globe" aria-hidden="true"></i>Maruoma M7md</h6>
+            </div>
+            <div style="clear: both;"></div>
+            <a class="edite-profile" id="EditProfile" href="#"
+                onclick="document.getElementById('edit-profile-ontent').style.height='100%'"></i>Edite Profile</a>
+            <div class="below-profile">
+                <div class="feedback">
+                    <h4>5</h4>
+                    <span>views</h4>
+                </div>
+                <div class="feedback">
+                    <h4>4</h4>
+                    <span>posts</h4>
+                </div>
+                <div class="feedback">
+                    <h4>5</h4>
+                    <span>saved posts</h4>
+                </div>
+            </div>
+
+            <!-- (ips) info/posts/ saved posts -->
+            <div class="ips">
+                <div class="row">
+                    <div class="col-4">
+                        <a class="tablink" onclick="opentab(event, 'views')">
+                            <span> <i class="fa fa-eye" aria-hidden="true"></i></span>VIEWS
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="tablink" onclick="opentab(event, 'posts')" id="defaultopen">
+                            <span> <i class="fa fa-indent" aria-hidden="true"></i></span>POSTS
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a class="tablink" onclick="opentab(event, 'savedposts')">
+                            <span> <i class="fa fa-bookmark-o" aria-hidden="true"></i></span>SAVED POSTS
+                        </a>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <!-- content of posts -->
+            <div class="posts tabcontent" id="posts">
+                <div class="containe">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-4 col-xs-6">
+                            <div class="post">
+                                <img src="../images/pro1/background4.jpg" class="photo-of-post">
+                                <a onclick="document.getElementById('content-one-post').style.height='100%'">
+                                    DETAILS
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-xs-6">
+                            <div class="post">
+                                <img src="../images/pro1/pexels-photo-1879061.jpeg" class="photo-of-post">
+                                <a onclick="document.getElementById('content-one-post').style.height='100%'">
+                                    DETAILS
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-xs-6">
+                            <div class="post">
+                                <img src="../images/pro1/pexels-photo-706137.jpeg" class="photo-of-post">
+                                <a onclick="document.getElementById('content-one-post').style.height='100%'">
+                                    DETAILS
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-xs-6">
+                            <div class="post">
+                                <img src="../images/pro1/photo-1558976825-6b1b03a03719.jpg" class="photo-of-post">
+                                <a onclick="document.getElementById('content-one-post').style.height='100%'">
+                                    DETAILS
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  content  of saved posts -->
+            <div class="savedposts tabcontent" id="savedposts">
+                <div class="containe">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-4 col-xs-6">
+                            <div class="savedpost">
+                                <img src="../images/user/savedposts/s1.jpg" class="photo-of-savedpost">
+                                <a onclick="document.getElementById('content-one-saved-post').style.height='100%'">
+                                    DETAILS
+                                </a>
+                                <span><i class="fa fa-bookmark-o" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-xs-6">
+                            <div class="savedpost">
+                                <img src="../images/user/savedposts/s3.jpg" class="photo-of-savedpost">
+                                <a onclick="document.getElementById('').style.height='100%'">
+                                    DETAILS
+                                </a>
+                                <span><i class="fa fa-bookmark-o" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-xs-6">
+                            <div class="savedpost">
+                                <img src="../images/user/savedposts/s2.jpg" class="photo-of-savedpost">
+                                <a onclick="document.getElementById('').style.height='100%'">
+                                    DETAILS
+                                </a>
+                                <span><i class="fa fa-bookmark-o" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-xs-6">
+                            <div class="savedpost">
+                                <img src="../images/user/savedposts/s4.jpg" class="photo-of-savedpost">
+                                <a href="#" onclick="document.getElementById('').style.height='100%'">
+                                    DETAILS
+                                </a>
+                                <span><i class="fa fa-bookmark-o" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-xs-6">
+                            <div class="savedpost">
+                                <img src="../images/user/savedposts/s1.jpg" class="photo-of-savedpost">
+                                <a onclick="document.getElementById('').style.height='100%'">
+                                    DETAILS
+                                </a>
+                                <span><i class="fa fa-bookmark-o" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content of views -->
+            <div class="views tabcontent" id="views">
+                <div class="containe" style="width: 90%;">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="view">
+                                <a>
+                                    <img src="../images/user/views/10.jpg">
+                                    <label class="viewer-name">Amr Hamada</label>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="view">
+                                <a>
+                                    <img src="../images/user/views/11.jpg">
+                                    <label class="viewer-name">Amr Hamada</label>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="view">
+                                <a>
+                                    <img src="../images/user/views/g1.png">
+                                    <label class="viewer-name">Hanan Emad</label>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="view">
+                                <a>
+                                    <img src="../images/user/views/g2.jpg">
+                                    <label class="viewer-name">Hanan Emad</label>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="view">
+                                <a href="">
+                                    <img src="../images/user/views/g3.jpg">
+                                    <label class="viewer-name">Hanan Emad</label>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- details of one post -->
+            <div class="one-post" id="content-one-post">
+                <!-- slider for posts  -->
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <span onclick="document.getElementById('content-one-post').style.height='0%'" class="close"
+                        title="Close "><i class="fa fa-times" aria-hidden="true"></i></span>
+                    <div class="carousel-inner">
+                        <!-- first post -->
+                        <div class="carousel-item active">
+                            <div class="containe">
+                                <div class="left" style="position: relative;">
+                                    <!-- <img src="../images/background4.jpg" > -->
+                                    <div class="mainview" id="mainview"></div>
+                                    <span class="ri" id="navright"><i class="fa fa-chevron-right"
+                                            aria-hidden="true"></i></span>
+                                    <span class="le" id="navleft"><i class="fa fa-chevron-left"
+                                            aria-hidden="true"></i></span>
+                                </div>
+                                <div class="col-lg- col-xs-">
+                                    <div class="details">
+                                        <img class="owner-img" src="../images/flat/2.jpg">
+                                        <label class="owner-name">Adam Mohamed</label>
+                                        <span id="delete" title="delete"><i class="fa fa-trash-o"
+                                                aria-hidden="true"></i></span>
+                                        <span id="edit" title="edit"
+                                            onclick="document.getElementById('edit-one-post').style.width='100%'"><i
+                                                class="fa fa-pencil" aria-hidden="true"></i></span>
+                                        <div style="clear:both"></div>
+                                        <div class="divider"></div>
+                                        <p style="margin-bottom: 8px;"><label class="head">Addres</label>:(Governorate:
+                                            El-Garibia,
+                                            city: tanta,
+                                            flat-num: 3,
+                                            house: 11,
+                                            roof: 7,
+                                            strret: 3 taha el-hakeem st,
+                                            village: null)
+                                        </p>
+                                        <p><label class="head">Description</label>:(bathroom: 1,
+                                            kitchen: 1,
+                                            num of room: 3,
+                                            size: 130)
+                                        </p>
+                                        <p><label class="head">Room</label>:(gender: female,
+                                            roo: true)
+                                        </p>
+                                        <p style="margin-bottom: 8px;">
+                                            <label class="head">Service</label>:(Electricity:
+                                            true,
+                                            Furinished: true,
+                                            water: true,
+                                            animal: true,
+                                            des:,
+                                            gas: true)
+                                        </p>
+                                        <p><label class="head">Time</label>:(from:,
+                                            to: 1,
+                                            user-id: 3)
+                                        </p>
+                                        <p><label class="head">Feedback</label>:(good)</p>
+                                        <p><label class="head">Location</label>:(25.23 N ,12.45 E)</p>
+                                        <p><label class="head">Price</label>:(130$)</p>
+                                        <div class="divider"></div>
+                                        <p class="rating-stars">
+                                        <ul class="stars" id=stars>
+                                            <li class='star' title='Poor' data-value='1'>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </li>
+                                            <li class='star' title='Fair' data-value='2'>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </li>
+                                            <li class='star' title='Good' data-value='3'>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </li>
+                                            <li class='star' title='Excellent' data-value='4'>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </li>
+                                            <li class='star' title='WOW' data-value='5'>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--second post  -->
+                        <div class="carousel-item">
+                            <div class="containe" style="top:5%"><br><br>post 2</div>
+                        </div>
+                        <!--third post  -->
+                        <div class="carousel-item">
+                            <div class="containe" style="top:5%"><br><br>post 3</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- edit of one post -->
+            <div class="edit-one-post" id="edit-one-post">
+                <span onclick="document.getElementById('edit-one-post').style.width='0%'" class="close"
+                    title="Close "><i class="fas fa-times"></i></span><br><br><br>
+                <div class="container ">
+                    <form>
+                        <div class="row">
+                            <div class=" col-lg-3 col-sm-4  mar-bottom ">
+                                <div class="content-img">
+                                    <img src="../images/pro1/background4.jpg">
+                                    <div class="middle">
+                                        <span class="edit" title="delete"><i class="fa fa-trash-o"
+                                                aria-hidden="true"></i></span>
+                                        <span class="delete" title="edit"><i class="fa fa-pencil"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-sm-4  mar-bottom ">
+                                <div class="content-img">
+                                    <img src="../images/pro1/photo-1558976825-6b1b03a03719.jpg">
+                                    <div class="middle">
+                                        <span class="edit" title="delete"><i class="fa fa-trash-o"
+                                                aria-hidden="true"></i></span>
+                                        <span class="delete" title="edit"><i class="fa fa-pencil"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-sm-4  mar-bottom ">
+                                <div class="content-img">
+                                    <img src="../images/pro1/pexels-photo-706137.jpeg">
+                                    <div class="middle">
+                                        <span class="edit" title="delete"><i class="fa fa-trash-o"
+                                                aria-hidden="true"></i></span>
+                                        <span class="delete" title="edit"><i class="fa fa-pencil"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-sm-4 mar-bottom ">
+                                <div class="add-image">
+                                    <a href="#"> <span><i class="fa fa-plus" aria-hidden="true"></i></span></a>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="col-lg-12">
+                                <label class="attribute">Address</label>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">Governorate</label>
+                                <input class="val" value="El-Garibia">
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">city</label>
+                                <input class="val" value="tanta">
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">flat-num</label>
+                                <input class="val" value="3">
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">house</label>
+                                <input class="val" value="11">
+                            </div>
+                            <div class="col-lg-3  col-sm-4 mar-bottom">
+                                <label class="key">roof</label>
+                                <input class="val" value="7">
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">strret</label>
+                                <input class="val" value="3 taha el-hakeem st">
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">village</label>
+                                <input class="val" value="null">
+                            </div>
+
+                            <!-- Services -->
+                            <div class="col-lg-12">
+                                <label class="attribute">Service</label>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">Electricity</label>
+                                <input class="val" value="true">
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">Furinished</label>
+                                <input class="val" value="true">
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">water</label>
+                                <input class="val" value="true">
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">animal</label>
+                                <input class="val" value="true">
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">des</label>
+                                <input class="val" value="true">
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">gas</label>
+                                <input class="val" value="true">
+                            </div>
+
+                            <!-- Description -->
+                            <div class="col-lg-12">
+                                <label class="attribute">Description</label>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">bathroom</label>
+                                <input class="val" value="1">
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">num of room</label>
+                                <input class="val" value="1">
+                            </div>
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="key">kitchen</label>
+                                <input class="val" value="1">
+                            </div>
+                            <div class="col-lg-3 col-sm-12 mar-bottom ">
+                                <label class="key">size</label>
+                                <input class="val" value="130$">
+                            </div>
+
+                            <!-- Rooms -->
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="attribute">Room</label>
+                                <label class="key">gender</label>
+                                <input class="val" value="female">
+                                <label class="key">roo</label>
+                                <input class="val" value="true">
+                            </div>
+
+                            <!-- Time -->
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="attribute">Time</label>
+                                <label class="key">from</label>
+                                <input class="val" value="11/3/2015">
+                                <label class="key">to</label>
+                                <input class="val" value="20/5/2015">
+                            </div>
+
+                            <!-- Location -->
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="attribute">Location</label>
+                                <label class="key">loc </label>
+                                <input class="val" value="25.23 N ,12.45 E">
+                            </div>
+
+                            <!-- Price -->
+                            <div class="col-lg-3 col-sm-4 mar-bottom">
+                                <label class="attribute">Price</label>
+                                <label class="key">price in $ </label>
+                                <input class="val" value="120$">
+                            </div>
+                            <!-- Submit Button -->
+                            <div class="col-lg-3 col-sm-12">
+                                <button value="">submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- details of one saved post -->
+            <div class="one-saved-post" id="content-one-saved-post">
+                <div class="glider-contain">
+                    <span onclick="document.getElementById('content-one-saved-post').style.height='0%'" class="close"
+                        title="Close "><i class="fas fa-times"></i></span>
+                    <!-- slider for saved posts -->
+                    <div class="glider">
+                        <!-- post 1 -->
+                        <div class="containe">
+                            <div class="left" style="position: relative;">
+                                <div class="smainview" id="smainview"></div>
+                                <span class="ri" id="snavright"><i class="fa fa-chevron-right"
+                                        aria-hidden="true"></i></span>
+                                <span class="le" id="snavleft"><i class="fa fa-chevron-left"
+                                        aria-hidden="true"></i></span>
+                            </div>
+                            <div class="col-lg- col-xs-">
+                                <div class="details">
+                                    <img class="owner-img" src="../images/flat/2.jpg">
+                                    <label class="owner-name">Adam Mohamed</label>
+                                    <span id="save"><i class="fa fa-bookmark-o" aria-hidden="true"></i></span>
+                                    <div style="clear:both"></div>
+                                    <div class="divider"></div>
+                                    <p style="margin-bottom: 8px;"><label class="head">Addres</label>:(Governorate:
+                                        El-Garibia,
+                                        city: tanta,
+                                        flat-num: 3,
+                                        house: 11,
+                                        roof: 7,
+                                        strret: 3 taha el-hakeem st,
+                                        village: null)
+                                    </p>
+                                    <p><label class="head">Description</label>:(bathroom: 1,
+                                        kitchen: 1,
+                                        num of room: 3,
+                                        size: 130)
+                                    </p>
+                                    <p><label class="head">Room</label>:(gender: female,
+                                        roo: true)
+                                    </p>
+                                    <p style="margin-bottom: 8px;"><label class="head">Service</label>:(Electricity:
+                                        true,
+                                        Furinished: true,
+                                        water: true,
+                                        animal: true,
+                                        des:,
+                                        gas: true)
+                                    </p>
+                                    <p><label class="head">Time</label>:(from:,
+                                        to: 1,
+                                        user-id: 3)
+                                    </p>
+                                    <p><label class="head">Feedback</label>:(good)</p>
+                                    <p><label class="head">Location</label>:(25.23 N ,12.45 E)</p>
+                                    <p><label class="head">Price</label>:(130$)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- post 2 -->
+                        <div class="containe"> post 2</div>
+                    </div>
+                    <button aria-label="Previous" class="glider-prev"><i class="fa fa-chevron-left"
+                            aria-hidden="true"></i></button>
+                    <button aria-label="Next" class="glider-next"><i class="fa fa-chevron-right"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+
+            <!-- content of ips -->
+            <div class="content-of-info" id="edit-profile-ontent">
+                <span onclick="document.getElementById('edit-profile-ontent').style.height='0%'" class="close"
+                    title="Close "><i class="fas fa-times"></i></span><br>
+                <div class="container">
+                    <form>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="../images/basic/profile.jpg">
+                                </td>
+                                <td>
+                                    <h6 class="title">Maruoma M7md</h6>
+                                    <label class="change-photo-profile"
+                                        onclick="document.getElementById('change-photo-content').style.display='block'">
+                                        Change Profile Photo
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="inputlabel">First Name</td>
+                                <td><input value="maruoma"></td>
+                            </tr>
+                            <tr>
+                                <td class="inputlabel">Mid Name</td>
+                                <td><input value="m7md"></td>
+                            </tr>
+                            <tr>
+                                <td class="inputlabel">Last Name</td>
+                                <td><input value="el-gendy"></td>
+                            </tr>
+                            <tr>
+                                <td class="inputlabel">Age</td>
+                                <td><input value="21"></td>
+                            </tr>
+                            <tr>
+                                <td class="inputlabel">Email</td>
+                                <td><input value="maruoma.mohamed213@gmail.com"></td>
+                            </tr>
+                            <tr>
+                                <td class="inputlabel">Governorate</td>
+                                <td><input value="menoufia"></td>
+                            </tr>
+                            <tr>
+                                <td class="inputlabel">City</td>
+                                <td><input value="shibeen"></td>
+                            </tr>
+                            <tr>
+                                <td class="inputlabel">House</td>
+                                <td><input value="5"></td>
+                            </tr>
+                            <tr>
+                                <td class="inputlabel">Street</td>
+                                <td><input value="hamdy kandel"></td>
+                            </tr>
+                            <tr>
+                                <td class="inputlabel">phone</td>
+                                <td><input value="01022823553"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" value="submit"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+            <!-- content of change photo -->
+            <div class="change-photo-profile-content" id="change-photo-content">
+                <div class="content">
+                    <p>Change Profile Photo</p>
+                    <button>Upload Photo</button>
+                    <div class="divider"></div>
+                    <button>Remove Photo</button>
+                    <div class="divider"></div>
+                    <button
+                        onclick="document.getElementById('change-photo-content').style.display='none'">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Of 2 Navs In Page -->
+        <div class="twoNavs">
+            <!-- Content Of Horizental NavBar -->
+            <div class="col-lg-12">
+                <div class="container">
+                    <!-- Header Of Horizental NavBar -->
+                    <div class="row pageheader fixed-top">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <!-- Logo of Site -->
+                            <h6><img class="imglogo" src="../images/icons/Mo8treb.png" /></h6>
+                            <!-- Search Icon -->
+                            <div class="search">
+                                <div class="s-effect">
+                                    <input type="text" placeholder="      click to filter flats" id="Search" class="in">
+                                    <div class="search-icon">
+                                        <span class="fas fa-search"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- User Profile Picture -->
+                            <a href="userProfile.html" class="userinfo">
+                                <img class="UserPicture" src="../images/basic/profile.jpg" />
+                                <h6 class="UserName">Maruoma M7md</h6>
+                            </a>
+                            <!-- Vertical Line -->
+                            <div class="line"></div>
+                            <!-- Page Name -->
+                            <a href="userProfile.html" class="pagelink">
+                                <h6 class="pagename">User Profile</h6>
+                            </a>
+                            <!-- Notification Icon And Notification Numbers -->
+                            <a class="notification-link">
+                                <i class="notification fas fa-bell fa-2x fa-secondary" id="notification"></i>
+                                <span class="notifi-number" id="notifi-num">3</span>
+                            </a>
+                            <!-- Log Out -->
+                            <a class="logout-link" onclick="Logout();">
+                                <i class="logout-icon fa fa-sign-out fa-2x" id="logout"></i>
+                            </a>
+                            <!-- Logout Content -->
+                            <div id="logoutContent">
+                                <div class="message">
+                                    Are You Sure To Logout ?
+                                </div>
+                                <button class="yes">Yes</button>
+                                <button class="no">Cancel</button>
+                            </div>
+                            <!-- Notification Content -->
+                            <div class="notifi-dropdown">
+                                <!-- Notification Box Content -->
+                                <div class="notifi-content">
+                                    <!-- Image Of Any User -->
+                                    <div class="notifi-img-content">
+                                        <img src="../images/basic/59508415_633340147131975_897403652375838720_n.jpg"
+                                            class="notifi-img">
+                                    </div>
+                                    <!-- What User Doing In Site(Download Post, Like Your Post, Dislike Your Post) -->
+                                    <div class="notifi-info">
+                                        <p>Nada Disliked your<span>Timeline Post</span></p>
+                                        <span class="notifi-time">10 minutes ago</span>
+                                    </div>
+                                </div>
+                                <!-- Notification Box Content -->
+                                <div class="notifi-content">
+                                    <!-- Image Of Any User -->
+                                    <div class="notifi-img-content">
+                                        <img src="../images/basic/profile.jpg" class="notifi-img">
+                                    </div>
+                                    <!-- What User Doing In Site(Download Post, Like Your Post, Dislike Your Post) -->
+                                    <div class="notifi-info">
+                                        <p>Maruoma download<span>New Post</span></p>
+                                        <span class="notifi-time">40 minutes ago</span>
+                                    </div>
+                                </div>
+                                <!-- Notification Box Content -->
+                                <div class="notifi-content">
+                                    <!-- Image Of Any User -->
+                                    <div class="notifi-img-content">
+                                        <img src="../images/basic/1116_196402540517940_1950022348_n.jpg"
+                                            class="notifi-img">
+                                    </div>
+                                    <!-- What User Doing In Site(Download Post, Like Your Post, Dislike Your Post) -->
+                                    <div class="notifi-info">
+                                        <p>Toka liked your<span>Timeline Post</span></p>
+                                        <span class="notifi-time">3 hour ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Of Search Icon Form -->
+                <div class="search-content " id='SearchContent'>
+                    <div class="content">
+                        <form>
+                            <input type="text" placeholder="Governorate"><br>
+                            <input type="text" placeholder="City"><br>
+                            <input type="text" placeholder="Street"><br>
+                            <input type="number" placeholder="Price"><br>
+                            <input type="number" placeholder="Size"><br>
+                            <input type="text" placeholder="Booking date" onfocus="(this.type='date')"><br><br>
+                            <div class="col-lg-5 text-center" style="margin: auto">
+                                <p id="ptype" class="accordion">choose a type ...... </p>
+                                <div id="pa" class="panel">
+                                    <label onclick="mytype(this)">summer resort</label> <br>
+                                    <label onclick="mytype(this)">go and back</label><br>
+                                    <label onclick="mytype(this)">general</label><br>
+                                    <label onclick="mytype(this)">student</label><br>
+                                </div>
+                            </div>
+                            <label class="radio-content">Room
+                                <input type="radio" name="type" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio-content">Flat
+                                <input type="radio" name="type">
+                                <span class="checkmark"></span>
+                            </label><br><br>
+                            <input type="submit" value="filter">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Of Vertical NavBar -->
+            <div class="col-lg-1 col-md-1 col-sm-1">
+                <nav class="navbar">
+                    <ul class="navbar-nav">
+                        <!-- This Section Of Nav Is Logo And (>>) Icon -->
+                        <li class="logo">
+                            <h6 class="link-text logo-text">Maruoma M7md</h6>
+                            <a class=" headericon1 fas fa-angle-double-right fa-2x" style="color: #ffa41b;" h></a>
+                        </li>
+                        <!-- From This Section Of Nav , It Will Know All Other Pages Name And Ther Icons -->
+                        <li class="nav-item">
+                            <a href="Pro1.html" class="nav-link">
+                                <i class="navicon fas fa-home fa-2x fa-secondary"></i>
+                                <span class="link-text">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="userProfile.html" class="nav-link">
+                                <i class="navicon fas fa-user fa-2x fa-secondary"></i>
+                                <span class="link-text">User Profile</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="flatProfile.html" class="nav-link">
+                                <i class="navicon fas fa-bed fa-2x fa-secondary"></i>
+                                <span class="link-text">Flat Profile</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="Reservation.html" class="nav-link">
+                                <i class="navicon fa fa-volume-control-phone fa-2x fa-secondary"></i>
+                                <span class="link-text">Reservation</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="About.html" class="nav-link">
+                                <i class="navicon fab fa-accusoft fa-2x fa-secondary"></i>
+                                <span class="link-text">About</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contactUs.html" class="nav-link">
+                                <i class="navicon fas fa-address-book fa-2x fa-secondary"></i>
+                                <span class="link-text">Contact Us</span>
+                            </a>
+                        </li>
+
+                        <!-- This Section Of Nav To Change Between Themes Color Of All page -->
+                        <li class="nav-item" id="themeButton">
+                            <a class="nav-link">
+                                <svg class="theme-icon" id="darkIcon" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512" class="svg-inline--fa fa-moon-stars fa-w-16 fa-7x">
+                                    <g class="fa-group">
+                                        <path fill="currentColor"
+                                            d="M320 32L304 0l-16 32-32 16 32 16 16 32 16-32 32-16zm138.7 149.3L432 128l-26.7 53.3L352 208l53.3 26.7L432 288l26.7-53.3L512 208z"
+                                            class="fa-primary"></path>
+                                        <path fill="currentColor"
+                                            d="M332.2 426.4c8.1-1.6 13.9 8 8.6 14.5a191.18 191.18 0 0 1-149 71.1C85.8 512 0 426 0 320c0-120 108.7-210.6 227-188.8 8.2 1.6 10.1 12.6 2.8 16.7a150.3 150.3 0 0 0-76.1 130.8c0 94 85.4 165.4 178.5 147.7z"
+                                            class="fa-secondary"></path>
+                                    </g>
+                                </svg>
+                                <svg class="theme-icon" id="lightIcon" aria-hidden="true" focusable="false"
+                                    data-prefix="fad" data-icon="sun" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512" class="svg-inline--fa fa-sun fa-w-16 fa-7x">
+                                    <g class="fa-group">
+                                        <path fill="currentColor"
+                                            d="M502.42 240.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.41-94.8a17.31 17.31 0 0 0-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4a17.31 17.31 0 0 0 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.41-33.5 47.3 94.7a17.31 17.31 0 0 0 31 0l47.31-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3a17.33 17.33 0 0 0 .2-31.1zm-155.9 106c-49.91 49.9-131.11 49.9-181 0a128.13 128.13 0 0 1 0-181c49.9-49.9 131.1-49.9 181 0a128.13 128.13 0 0 1 0 181z"
+                                            class="fa-primary"></path>
+                                        <path fill="currentColor"
+                                            d="M352 256a96 96 0 1 1-96-96 96.15 96.15 0 0 1 96 96z"
+                                            class="fa-secondary"></path>
+                                    </g>
+                                </svg>
+                                <svg class="theme-icon" id="solarIcon" aria-hidden="true" focusable="false"
+                                    data-prefix="fad" data-icon="sunglasses" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                                    class="svg-inline--fa fa-sunglasses fa-w-18 fa-7x">
+                                    <g class="fa-group">
+                                        <path fill="currentColor"
+                                            d="M574.09 280.38L528.75 98.66a87.94 87.94 0 0 0-113.19-62.14l-15.25 5.08a16 16 0 0 0-10.12 20.25L395.25 77a16 16 0 0 0 20.22 10.13l13.19-4.39c10.87-3.63 23-3.57 33.15 1.73a39.59 39.59 0 0 1 20.38 25.81l38.47 153.83a276.7 276.7 0 0 0-81.22-12.47c-34.75 0-74 7-114.85 26.75h-73.18c-40.85-19.75-80.07-26.75-114.85-26.75a276.75 276.75 0 0 0-81.22 12.45l38.47-153.8a39.61 39.61 0 0 1 20.38-25.82c10.15-5.29 22.28-5.34 33.15-1.73l13.16 4.39A16 16 0 0 0 180.75 77l5.06-15.19a16 16 0 0 0-10.12-20.21l-15.25-5.08A87.95 87.95 0 0 0 47.25 98.65L1.91 280.38A75.35 75.35 0 0 0 0 295.86v70.25C0 429 51.59 480 115.19 480h37.12c60.28 0 110.38-45.94 114.88-105.37l2.93-38.63h35.76l2.93 38.63c4.5 59.43 54.6 105.37 114.88 105.37h37.12C524.41 480 576 429 576 366.13v-70.25a62.67 62.67 0 0 0-1.91-15.5zM203.38 369.8c-2 25.9-24.41 46.2-51.07 46.2h-37.12C87 416 64 393.63 64 366.11v-37.55a217.35 217.35 0 0 1 72.59-12.9 196.51 196.51 0 0 1 69.91 12.9zM512 366.13c0 27.5-23 49.87-51.19 49.87h-37.12c-26.69 0-49.1-20.3-51.07-46.2l-3.12-41.24a196.55 196.55 0 0 1 69.94-12.9A217.41 217.41 0 0 1 512 328.58z"
+                                            class="fa-secondary"></path>
+                                        <path fill="currentColor"
+                                            d="M64.19 367.9c0-.61-.19-1.18-.19-1.8 0 27.53 23 49.9 51.19 49.9h37.12c26.66 0 49.1-20.3 51.07-46.2l3.12-41.24c-14-5.29-28.31-8.38-42.78-10.42zm404-50l-95.83 47.91.3 4c2 25.9 24.38 46.2 51.07 46.2h37.12C489 416 512 393.63 512 366.13v-37.55a227.76 227.76 0 0 0-43.85-10.66z"
+                                            class="fa-primary"></path>
+                                    </g>
+                                </svg>
+                                <span class="link-text">Themes</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS Links -->
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/Pro1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/glider.min.js"></script>
+    <script src="../js/userProfile.js"></script>
+
+</body>
+
+</html>

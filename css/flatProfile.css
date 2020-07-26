@@ -1,0 +1,839 @@
+/*************************************************************************/
+
+/*---------------[ Flat Page ]--------------- */
+
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: #141418;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*************************************************************************/
+
+/*----------------[ All Links ]-------------- */
+
+a:hover {
+    cursor: pointer;
+}
+
+/*************************************************************************/
+
+/*-----------------[ Close ]--------------- */
+
+.close {
+    color: var(--text-secondary);
+    margin-right: 46px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: white;
+}
+
+/*************************************************************************/
+
+/*----------------[ Left NavBar ]--------------- */
+
+.twoNavs .navbar {
+    margin-left: -20px;
+}
+
+/*---------[ Responsive Left NavBar ]----------- */
+
+@media only screen and (max-width: 700px) {
+    .flatDetails {
+        margin-top: -30px;
+    }
+}
+
+/*************************************************************************/
+
+/*----------------[ Tab Links ]-------------- */
+
+.flatDetails .tab-links {
+    margin-left: 5rem;
+    margin-top: 100px;
+    background-image: var(--back-img);
+    background-size: cover;
+    background-position: center;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.flatDetails .tab-links .left {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.flatDetails .tab-links .left a {
+    padding-right: 10px;
+    color: var(--text-secondary);
+}
+
+.flatDetails .tab-links .left a i {
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.flatDetails .left a i {
+    background-color: #ffa41b;
+}
+
+.flatDetails .left a i.factive {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+/*----------------[ Responsive Tab Links ]-------------- */
+
+@media(max-width:768px) {
+    .flatDetails .tab-links {
+        margin-left: 0;
+        padding-left: 15px;
+    }
+}
+
+/*************************************************************************/
+
+/*----------------[ Add Flat ]-------------- */
+
+.flatDetails #addflat {
+    animation: animatingzoom 0.6s;
+}
+
+.flatDetails #addflat .content-img {
+    position: relative;
+}
+
+@keyframes animatingzoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.flatDetails h2 {
+    padding-bottom: 18px;
+    font-size: 26px;
+    color: var(--text-primary);
+}
+
+.flatDetails #addflat .middle {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 2%;
+}
+
+.flatDetails #addflat .content-img span {
+    background-color: var(--text-secondary);
+    padding: 2px 5px;
+    color: var(--bg-primary);
+    cursor: pointer;
+}
+
+.flatDetails #addflat img {
+    height: 100px;
+    width: 180px;
+    opacity: 1;
+}
+
+.flatDetails #addflat .content-img:hover img {
+    opacity: 0.5;
+}
+
+.flatDetails #addflat .content-img:hover .middle {
+    opacity: 1;
+}
+
+.flatDetails #addflat .add-image {
+    height: 100px;
+    width: 180px;
+    position: relative;
+    background-color: #343a4052;
+    text-align: center;
+}
+
+.flatDetails #addflat .add-image span {
+    color: white;
+    font-size: 16px;
+    background-color: #6c757d91;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    position: absolute;
+    top: 29px;
+    left: 70px;
+}
+
+.flatDetails #addflat .attribute {
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 20px;
+    padding: 1px 10px;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.flatDetails #addflat .mar-bottom {
+    margin-bottom: 12px;
+}
+
+.flatDetails #addflat .key {
+    display: block;
+    color: var(--text-primary);
+}
+
+.flatDetails #addflat .val {
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: var(--back-val);
+    color: var(--text-secondary);
+}
+
+.flatDetails #addflat button {
+    width: 50%;
+    text-transform: uppercase;
+    color: var(--bg-primary);
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 6px;
+    background: 0 0;
+    background: #ffa41b;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: all 0.5s ease-in;
+}
+
+.flatDetails #addflat button:hover {
+    transform: scaleX(1.1);
+}
+
+/*----------------[ Responsive Add Flat ]-------------- */
+
+@media only screen and (max-width: 1000px) {
+    .flatDetails #addflat button {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .flatDetails #addflat {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .flatDetails #addflat button {
+        width: 50%;
+    }
+}
+
+@media (max-width:573px) {
+    .flatDetails #addflat form {
+        padding-left: 30%;
+    }
+}
+
+@media (min-width:574px) and (max-width:769px) {
+    .flatDetails #addflat .mar-bottom {
+        margin-right: 26px;
+    }
+}
+
+/*************************************************************************/
+
+/*----------------[ Delete Flat ]-------------- */
+
+.flatDetails #deletedflats {
+    animation: animatingzoom 0.6s;
+    padding-bottom: 50px;
+    display: none;
+}
+
+.flatDetails #deletedflats .row {
+    overflow: hidden;
+}
+
+/*----------------[ Delete Post ]-------------- */
+
+.flatDetails .deletedpost img {
+    width: 100%;
+    height: 293px;
+    transition: all 0.5s;
+}
+
+.flatDetails .deletedpost {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+.flatDetails .deletedpost .overlay {
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-left: 10%;
+}
+
+.flatDetails .deletedpost:hover .overlay {
+    opacity: 1;
+}
+
+.flatDetails .deletedpost .overlay a {
+    position: absolute;
+    font-size: 17px;
+    font-weight: 500;
+    top: 50%;
+    text-transform: uppercase;
+}
+
+.flatDetails .deletedpost .overlay .fa {
+    color: white;
+    position: absolute;
+    font-size: 17px;
+    top: 61%;
+    cursor: pointer;
+}
+
+.flatDetails .deletedpost .overlay .fa:hover, .flatDetails .deletedpost .overlay a {
+    color: rgba(255, 164, 27);
+}
+
+.flatDetails .deletedpost .overlay .fa-retweet {
+    padding-left: 20px;
+}
+
+.flatDetails .deletedpost:hover img {
+    transform: scale(1.2);
+}
+
+/*----------------[ Responsive Delete Flat ]-------------- */
+
+@media only screen and (max-width: 700px) {
+    .flatDetails #deletedflats {
+        padding-bottom: 100px;
+    }
+}
+
+@media(max-width:575px) {
+    .flatDetails #deletedflats .col-xs-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/*************************************************************************/
+
+/*----------------[ Pending Flat ]-------------- */
+
+.flatDetails #pendingflats {
+    animation: animatingzoom 0.6s;
+    padding-bottom: 50px;
+    display: none;
+}
+
+/*----------------[ Pending Post ]-------------- */
+
+.flatDetails .pendingpost img {
+    width: 241px;
+    height: 293px;
+    transition: all 0.5s;
+}
+
+.flatDetails .pendingpost {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+.flatDetails .pendingpost .overlay {
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-left: 10%;
+}
+
+.flatDetails .pendingpost:hover .overlay {
+    opacity: 1;
+}
+
+.flatDetails .pendingpost .overlay a {
+    position: absolute;
+    font-size: 17px;
+    font-weight: 500;
+    top: 50%;
+    text-transform: uppercase;
+}
+
+.flatDetails .pendingpost .overlay .fa {
+    color: white;
+    position: absolute;
+    font-size: 17px;
+    top: 61%;
+    cursor: pointer;
+}
+
+.flatDetails .pendingpost .overlay .fa:hover, .flatDetails .pendingpost .overlay a {
+    color: rgba(255, 164, 27);
+}
+
+.flatDetails .pendingpost .overlay .fa-share-alt {
+    padding-left: 20px;
+}
+
+.flatDetails .pendingpost:hover img {
+    transform: scale(1.2);
+}
+
+/*----------------[ Responsive Pending Flat ]-------------- */
+
+@media only screen and (max-width: 700px) {
+    .flatDetails #pendingflats {
+        padding-bottom: 100px;
+    }
+}
+
+@media(max-width:575px) {
+    .flatDetails #pendingflats .col-xs-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/*************************************************************************/
+
+/*--------[ One post of Deleting and Pending Page ]----------- */
+
+.flatDetails .one-deleted-post, .flatDetails .one-pending-post {
+    position: fixed;
+    height: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1030;
+    overflow: auto;
+    transition: all 0.5s ease-in-out;
+    overflow-x: hidden;
+}
+
+.flatDetails .carousel-control-prev, .flatDetails .carousel-control-next {
+    top: 10%;
+    width: 10%;
+}
+
+.flatDetails .one-deleted-post .containe, .flatDetails .one-pending-post .containe {
+    display: flex;
+    padding-left: 184px;
+    margin-bottom: 20px;
+}
+
+.flatDetails .one-deleted-post .mainview, .flatDetails .one-pending-post .mainview {
+    width: 600px;
+    height: 585px;
+}
+
+.flatDetails .one-deleted-post .left span, .flatDetails .one-pending-post .left span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+.flatDetails .one-deleted-post .left .ri, .flatDetails .one-pending-post .left .ri {
+    right: 20px;
+}
+
+.flatDetails .one-deleted-post .left .le, .flatDetails .one-pending-post .left .le {
+    left: 20px;
+}
+
+.flatDetails .one-deleted-post .details, .flatDetails .one-pending-post .details {
+    background-color: var(--bg-secondary);
+    padding-bottom: 1px;
+    padding-top: 20px;
+    width: 80%;
+    position: relative;
+}
+
+.flatDetails .one-deleted-post .details .owner-img, .flatDetails .one-pending-post .details .owner-img {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.flatDetails .one-deleted-post .details .owner-name, .flatDetails .one-pending-post .details .owner-name {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.flatDetails .one-deleted-post .divider, .flatDetails .one-pending-post .divider {
+    height: 0.5px;
+    background-color: var(--gray);
+    width: 100%;
+    opacity: 0.4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flatDetails .one-deleted-post .details #delete, .flatDetails .one-pending-post .details #delete {
+    color: var(--text-primary);
+    font-size: 17px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.flatDetails .one-deleted-post .details #edit, .flatDetails .one-pending-post .details #edit {
+    color: var(--text-primary);
+    font-size: 17px;
+    float: right;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.flatDetails .details #edit:hover, .flatDetails .details #delete:hover {
+    color: var(--bg-primary);
+}
+
+.flatDetails .one-deleted-post p, .flatDetails .one-pending-post p {
+    color: var(--text-primary);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.flatDetails .one-deleted-post .stars, .flatDetails .one-pending-post .stars {
+    list-style: none;
+    display: flex;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-bottom: 0.9rem;
+    color: var(--text-primary);
+}
+
+.flatDetails .one-deleted-post .stars li, .flatDetails .one-pending-post .stars li {
+    cursor: pointer;
+}
+
+.flatDetails .hoverrate {
+    color: #FFCC36;
+}
+
+.flatDetails .selectedrate {
+    color: #FF912C;
+}
+
+.flatDetails .one-deleted-post .head, .flatDetails .one-pending-post .head {
+    color: var(--bg-primary);
+    font-weight: 600;
+    background-color: #ffa41b;
+    padding: 1px 10px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+/*-----[ Responsive One post of Deleting and Pending Page ]----- */
+
+@media (max-width:734px) {
+    .flatDetails .one-deleted-post .containe, .flatDetails .one-pending-post .containe {
+        padding-left: 50px;
+        padding-right: 50px;
+        display: block;
+    }
+    .flatDetails .one-deleted-post .mainview, .flatDetails .one-pending-post .mainview {
+        width: 100%;
+        height: 366px;
+    }
+    .flatDetails .one-deleted-post .details, .flatDetails .one-pending-post .details {
+        width: 100%;
+    }
+}
+
+@media (min-width:735px) and (max-width:755px) {
+    .flatDetails .one-deleted-post .containe, .flatDetails .one-pending-post .containe {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .flatDetails .one-deleted-post .mainview, .flatDetails .one-pending-post .mainview {
+        height: 722px;
+        width: 394px;
+    }
+    .flatDetails .one-deleted-post .details, .flatDetails .one-pending-post .details {
+        width: 282px;
+    }
+}
+
+@media(min-width:735px) and (max-width:824px) {
+    .flatDetails .carousel-control-next {
+        right: -27px;
+    }
+    .flatDetails .carousel-control-prev {
+        left: -27px;
+    }
+}
+
+@media (min-width:756px) and (max-width:780px) {
+    .flatDetails .one-deleted-post .containe, .flatDetails .one-pending-post .containe {
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+    .flatDetails .one-deleted-post .mainview, .flatDetails .one-pending-post .mainview {
+        height: 722px;
+        width: 394px;
+    }
+    .flatDetails .one-deleted-post .details, .flatDetails .one-pending-post .details {
+        width: 282px;
+    }
+}
+
+@media (min-width:781px) and (max-width:824px) {
+    .flatDetails .one-deleted-post .containe, .flatDetails .one-pending-post .containe {
+        padding-left: 60px;
+        padding-right: 40px;
+    }
+    .flatDetails .one-deleted-post .mainview, .flatDetails .one-pending-post .mainview {
+        height: 722px;
+        width: 394px;
+    }
+    .flatDetails .one-deleted-post .details, .flatDetails .one-pending-post .details {
+        width: 282px;
+    }
+}
+
+@media (min-width:825px) and (max-width:991px) {
+    .flatDetails .one-deleted-post .containe, .flatDetails .one-pending-post .containe {
+        padding-left: 90px;
+        padding-right: 40px;
+    }
+    .flatDetails .one-deleted-post .mainview, .flatDetails .one-pending-post .mainview {
+        height: 722px;
+        width: 394px;
+    }
+    .flatDetails .one-deleted-post .details, .flatDetails .one-pending-post .details {
+        width: 282px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1040px) {
+    .flatDetails .one-deleted-post .containe, .flatDetails .one-pending-post .containe {
+        padding-left: 130px;
+        padding-right: 100px;
+    }
+    .flatDetails .one-deleted-post .mainview, .flatDetails .one-pending-post .mainview {
+        height: 722px;
+        width: 454px;
+    }
+    .flatDetails .one-deleted-post .details, .flatDetails .one-pending-post .details {
+        width: 282px;
+    }
+}
+
+@media (min-width:1041px) and (max-width:1260px) {
+    .flatDetails .one-deleted-post .containe, .flatDetails .one-pending-post .containe {
+        padding-left: 190px;
+        padding-right: 100px;
+    }
+    .flatDetails .one-deleted-post .mainview, .flatDetails .one-pending-post .mainview {
+        height: 722px;
+        width: 454px;
+    }
+    .flatDetails .one-deleted-post .details, .flatDetails .one-pending-post .details {
+        width: 282px;
+    }
+}
+
+@media (min-width:1261px) and (max-width:1360px) {
+    .flatDetails .one-deleted-post .containe, .flatDetails .one-pending-post .containe {
+        padding-left: 190px;
+        padding-right: 100px;
+    }
+    .flatDetails .one-deleted-post .mainview, .flatDetails .one-pending-post .mainview {
+        height: 722px;
+        width: 577px;
+    }
+    .flatDetails .one-deleted-post .details, .flatDetails .one-pending-post .details {
+        width: 282px;
+    }
+}
+
+/*-----[ Editing One post of Deleting and Pending Page ]----- */
+
+.flatDetails .edit-one-deleted-post, .flatDetails .edit-one-pending-post {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 0;
+    background-color: var(--bg-primary);
+    transition: 0.5s;
+    height: 100%;
+    z-index: 1050;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.flatDetails .edit-one-deleted-post .content-img, .flatDetails .edit-one-pending-post .content-img {
+    position: relative;
+}
+
+.flatDetails .edit-one-deleted-post .middle, .flatDetails .edit-one-pending-post .middle {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 2%;
+}
+
+.flatDetails .edit-one-deleted-post .content-img span, .flatDetails .edit-one-pending-post .content-img span {
+    background-color: var(--text-secondary);
+    padding: 2px 5px;
+    color: var(--bg-primary);
+    cursor: pointer;
+}
+
+.flatDetails .edit-one-deleted-post .content-img img, .flatDetails .edit-one-pending-post .content-img img {
+    height: 100px;
+    width: 180px;
+    opacity: 1;
+}
+
+.flatDetails .edit-one-deleted-post .content-img:hover img, .flatDetails .edit-one-pending-post .content-img:hover img {
+    opacity: 0.5;
+}
+
+.flatDetails .edit-one-deleted-post .content-img:hover .middle, .flatDetails .edit-one-pending-post .content-img:hover .middle {
+    opacity: 1;
+}
+
+.flatDetails .edit-one-deleted-post .add-image, .flatDetails .edit-one-pending-post .add-image {
+    height: 100px;
+    width: 180px;
+    position: relative;
+    background-color: #343a4052;
+    text-align: center;
+}
+
+.flatDetails .edit-one-deleted-post .add-image span, .flatDetails .edit-one-pending-post .add-image span {
+    color: white;
+    font-size: 16px;
+    background-color: #6c757d91;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    position: absolute;
+    top: 29px;
+    left: 70px;
+}
+
+.flatDetails .edit-one-deleted-post .attribute, .flatDetails .edit-one-pending-post .attribute {
+    color: var(--bg-primary);
+    font-weight: 600;
+    background-color: #ffa41b;
+    padding: 1px 10px;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.flatDetails .edit-one-deleted-post .mar-bottom, .flatDetails .edit-one-pending-post .mar-bottom {
+    margin-bottom: 12px;
+}
+
+.flatDetails .edit-one-deleted-post .key, .flatDetails .edit-one-pending-post .key {
+    display: block;
+    color: var(--text-secondary);
+}
+
+.flatDetails .edit-one-deleted-post .val, .flatDetails .edit-one-pending-post .val {
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: var(--back-val);
+    color: var(--text-primary);
+}
+
+.flatDetails .edit-one-deleted-post button, .flatDetails .edit-one-pending-post button {
+    width: 50%;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    outline: none;
+    background: 0 0;
+    border: 1px solid var(--text-secondary);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: all 0.5s ease-in;
+}
+
+.flatDetails .edit-one-deleted-post button:hover, .flatDetails .edit-one-pending-post button:hover {
+    background-color: var(--bg-primary);
+    border: var(--bg-primary);
+    transform: scale(1.1, 1.1);
+    color: #ffa41b;
+}
+
+/*-----[ Responsive Editing One post of Deleting and Pending Page ]----- */
+
+@media (max-width:573px) {
+    .flatDetails .edit-one-deleted-post form, .flatDetails .edit-one-pending-post form {
+        padding-left: 30%;
+    }
+}
+
+@media (min-width:574px) and (max-width:769px) {
+    .flatDetails .edit-one-deleted-post .mar-bottom, .flatDetails .edit-one-pending-post .mar-bottom {
+        margin-right: 26px;
+    }
+}
+
+@media(min-width:992px) and (max-width:1089px) {
+    .flatDetails #addflat .val {
+        padding: 5px 5px;
+    }
+}
