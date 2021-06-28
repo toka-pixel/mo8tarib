@@ -21,6 +21,17 @@ a:hover {
 
 /*************************************************************************/
 
+  /*-----------------[ Zoom ]--------------- */
+
+@keyframes animatezoom {
+    from {
+        scale: 0;
+    }
+    to {
+        scale: 1;
+    }
+}
+
 /*-----------------[ Close ]--------------- */
 
 .close {
@@ -207,7 +218,7 @@ a:hover {
     color: var(--text-secondary);
 }
 
-.flatDetails #addflat button {
+/* .flatDetails #addflat button {
     width: 50%;
     text-transform: uppercase;
     color: var(--bg-primary);
@@ -220,7 +231,25 @@ a:hover {
     margin-top: 20px;
     margin-bottom: 50px;
     transition: all 0.5s ease-in;
+} */
+.flatDetails #addflat .clicktoaddflat {
+  
+    text-transform: uppercase;
+    color: var(--bg-primary);
+    padding: 5px 15px;
+    border-radius: 6px;
+    background: 0 0;
+    background: #ffa41b;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    width:45%;
+    text-align: center;
 }
+
+
+
 
 .flatDetails #addflat button:hover {
     transform: scaleX(1.1);
@@ -837,3 +866,183 @@ a:hover {
         padding: 5px 5px;
     }
 }
+
+
+
+
+/********************** reservation to add new post********** */
+
+/* ------------------------------------------reservation----------------------------------- */
+ .reservation{
+   
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    text-align: center;
+    overflow: auto;
+    transition: all 0.5s ease-in-out;
+    z-index: 1099;
+    text-align: -webkit-center;
+}
+.reservation .insurance{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.reservation .insurance label{
+    font-family: cursive;
+    font-size: 19px;
+    color: var(--tab-toggle);
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+.reservation .insurance input[type=text]{
+    padding: 6px 19px;
+    border-radius: 25px;
+    outline: none;
+    font-family: cursive;
+    border: none;
+}
+.reservation .insurance input[type=submit]{
+    padding: 5px 27px;
+  
+    background-color: var(--bg-secondary);
+    color: var(--tab-toggle);
+    outline: none;
+    border: 1px solid var(--tab-toggle);
+    border-radius: 25px;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out;
+    font-family: cursive;
+}
+.reservation .insurance input[type=submit]:hover{
+   color:black;
+   background-color: var(--tab-toggle);
+   border:1px solid var(--tab-toggle);
+}
+.reservation .reserve{
+    text-align: center;
+ 
+   
+}
+.reservation .price{
+    font-size: 40px;
+    font-family: cursive;
+    color: var(--yellow);
+}
+
+.reservation .type-pay{
+    font-family: cursive;
+    font-size: 20px;
+    margin-top: 24px;
+}
+.reservation .booking-date{
+    font-size: 19px;
+    font-family: cursive;
+    margin-bottom: 33px;
+}
+.reservation .reserve input{
+    outline: none;
+    /* width: 77%; */
+    margin-bottom: 11px;
+    padding: 10px 28px;
+    background: 0 0;
+    color: var(--yellow);
+    border: none;
+    border-bottom: 1px solid var(--yellow);
+}
+.reservation .reserve label span{
+    font-size: 18px;
+    font-family: cursive;
+    margin-right: 9px;
+    color: var(--tab-toggle);
+}
+.reservation input[type=date]{
+    background: white;
+    color: black;
+    border-radius: 25px;
+    border-bottom: none;
+    padding: 5px 16px;
+    margin-right: 17px;
+}
+
+
+
+.reservation .paylink{
+    transition: all 0.4s ease-in-out;
+}
+
+.reservation .paycontent{
+    animation: animatezoom 0.6s;
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+.reservation ul{
+    list-style: none;
+    margin-left: -48px;
+}
+.reservation ul li{
+    cursor: pointer;
+}
+.reservation img{
+    width: 6%;
+    margin-bottom: 19px;
+    margin-top: 10px;
+}
+
+.reservation button{
+    background: black ;
+    outline: none;
+    border:1px solid var(--yellow);
+    width: 17%;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: cursive;
+    transition:all 0.5s ease-in-out;
+    color:var(--yellow);
+    padding: 10px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+ 
+}
+.reservation button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .reservation button span:after {
+    content: '\00bb ';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .reservation button:hover span {
+    padding-right: 25px;
+  }
+  
+  .reservation button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+
+  /* ***********************responsive*************** */
+  @media(max-width:800px){
+    .reservation img{
+        width: 15%;
+    }
+    .reservation button{
+        width: 35%;
+    }
+  }
+

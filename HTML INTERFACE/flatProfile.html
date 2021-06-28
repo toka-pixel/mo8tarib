@@ -205,7 +205,8 @@
 
                                 <!-- Submit Button -->
                                 <div class="col-lg-3 col-sm-12">
-                                    <button value="">submit</button>
+                                    <p class="clicktoaddflat"
+                                        onclick="document.getElementById('reservationaddpost').style.height='100%'">submit</p>
                                 </div>
                             </div>
                         </form>
@@ -856,6 +857,8 @@
                 </div>
             </div>
 
+
+
         </div>
 
         <!-- Content Of 2 Navs In Page -->
@@ -880,7 +883,7 @@
                             <!-- User Profile Picture -->
                             <a href="userProfile.html" class="userinfo">
                                 <img class="UserPicture" src="../images/basic/profile.jpg" />
-                                <h6 class="UserName">Maruoma M7md</h6>
+                                <h6 class="UserName">Toka Yasser</h6>
                             </a>
                             <!-- Vertical Line -->
                             <div class="line"></div>
@@ -989,7 +992,7 @@
                     <ul class="navbar-nav">
                         <!-- This Section Of Nav Is Logo And (>>) Icon -->
                         <li class="logo">
-                            <h6 class="link-text logo-text">Maruoma M7md</h6>
+                            <h6 class="link-text logo-text">Toka Yasser</h6>
                             <a class=" headericon1 fas fa-angle-double-right fa-2x" style="color: #ffa41b;" h></a>
                         </li>
                         <!-- From This Section Of Nav , It Will Know All Other Pages Name And Ther Icons -->
@@ -1083,11 +1086,71 @@
         </div>
     </section>
 
+    <!-- reservation to add new post -->
+    <div class="reservation" id="reservationaddpost">
+        <span onclick="document.getElementById('reservationaddpost').style.height='0%'" class="close" title="Close ">
+            <i class="fas fa-times"></i></span>
+        <br>
+        <br>
+        <br>
+
+        <div class="insurance">
+            <label>You must pay the insurance 500$</label>
+            <br>
+            <input type="text" placeholder="enter 500$">
+
+
+        </div>
+
+        <div class="reserve">
+
+            <p class="type-pay">How Would You Like to Pay?</p>
+
+            <div class="tab-pay">
+                <ul>
+                    <li class="paylink" onclick="payfunction(event, 'creditcard')">
+
+                        <img src="../images/reservation/visa.svg">
+                        <img src="../images/reservation/mastercard.svg">
+
+                    </li>
+                    <div id="creditcard" class="paycontent">
+                        <input type="text" placeholder="Name In Card">
+                        <br>
+                        <input type="text" placeholder="Card Number">
+                        <br>
+                        <input type="text" placeholder="Exipry Date" onfocus="(this.type='date')">
+                        <br>
+                        <input type="text" placeholder="Cvv">
+                    </div>
+                    <li class="paylink" onclick="payfunction(event, 'vodafone')">
+
+                        <img src="../images/reservation/vodafone.svg">
+                    </li>
+                    <div id="vodafone" class="paycontent">
+
+                        <input type="text" placeholder="National Id">
+                        <br>
+                        <input type="text" placeholder="Mobile Number">
+                        <br>
+                        <input type="number" placeholder="Amount">
+                    </div>
+
+                </ul>
+            </div>
+            <br>
+
+            <button><span>pay </span></button>
+
+        </div>
+    </div>
+
     <!-- JS Links -->
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/Pro1.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/flatProfile.js"></script>
+    <script src="../js/reservation.js"></script>
 
 </body>
 

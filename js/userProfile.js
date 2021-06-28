@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
     /*--------------------- [ slider for posts ] ------------------------*/
     //  --------------------update carousal bootstrap------------------
     $('.carousel').carousel({
@@ -154,3 +156,5 @@ function opentab(evt, tabname) {
 }
 //------------------open default tap ----------------
 document.getElementById("defaultopen").click();
+
+

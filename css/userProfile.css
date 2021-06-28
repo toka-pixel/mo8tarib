@@ -11,6 +11,20 @@ body {
     overflow-x: hidden;
 }
 
+/* ************** */
+.glider-next {
+    right: 20px;
+    left: auto;
+    font-size: 25px;
+    top: 56%;
+}
+.glider-prev {
+    left: 20px;
+    right: auto;
+    font-size: 25px;
+    top: 56%;
+}
+
 /*************************************************************************/
 
 /*----------------[ All Links ]-------------- */
@@ -155,7 +169,7 @@ a:hover {
 
 .userDetails .ips {
     border-top: 1px solid #dbdbdb;
-    width: 100%;
+    width: 90%;
     margin-top: 70px;
     padding-top: 19px;
     text-align: center;
@@ -216,6 +230,14 @@ a:hover {
     bottom: 5%;
     cursor: pointer;
     transition: all 0.5s;
+}
+.userDetails .posts .post .rent{
+    left: 5%;
+    position: absolute;
+    bottom: 12%;
+    background: rgba(255, 164, 27);
+    padding: 0px 20px;
+    cursor: pointer;
 }
 
 .userDetails .posts .post:hover .photo-of-post {
@@ -329,9 +351,9 @@ a:hover {
     width: 100%;
     left: 0;
     top: 0;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1030;
+    z-index: 1031;
     overflow: auto;
     transition: all 0.5s ease-in-out;
     overflow-x: hidden;
@@ -350,7 +372,7 @@ a:hover {
 
 .userDetails .one-saved-post .smainview {
     width: 650px;
-    height: 550px;
+    padding-top: 579px;
 }
 
 .userDetails .one-saved-post .left span {
@@ -442,7 +464,7 @@ a:hover {
     }
     .userDetails .one-saved-post .smainview {
         width: 100%;
-        height: 366px;
+       padding-top: 366px;
     }
     .userDetails .one-saved-post .details {
         width: 100%;
@@ -455,8 +477,8 @@ a:hover {
         padding-right: 20px;
     }
     .userDetails .one-saved-post .smainview {
-        height: 659px;
-        width: 303px;
+        width: 659px;
+        padding-top: 647px;
     }
     .userDetails .one-saved-post .details {
         width: 282px;
@@ -469,7 +491,7 @@ a:hover {
         padding-right: 40px;
     }
     .userDetails .one-saved-post .smainview {
-        height: 661px;
+        padding-top: 649px;
         width: 307px;
     }
     .userDetails .one-saved-post .details {
@@ -483,7 +505,7 @@ a:hover {
         padding-right: 100px;
     }
     .userDetails .one-saved-post .smainview {
-        height: 659px;
+      padding-top: 649px;
         width: 454px;
     }
     .userDetails .one-saved-post .details {
@@ -497,7 +519,7 @@ a:hover {
         padding-right: 100px;
     }
     .userDetails .one-saved-post .smainview {
-        height: 660px;
+        padding-top: 649px;
         width: 454px;
     }
     .userDetails .one-saved-post .details {
@@ -511,7 +533,7 @@ a:hover {
         padding-right: 100px;
     }
     .userDetails .one-saved-post .smainview {
-        height: 660px;
+     padding-top: 648px;
         width: 577px;
     }
     .userDetails .one-saved-post .details {
@@ -562,9 +584,9 @@ a:hover {
     width: 100%;
     left: 0;
     top: 0;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1030;
+    z-index: 1031;
     overflow: auto;
     transition: all 0.5s ease-in-out;
     overflow-x: hidden;
@@ -587,7 +609,7 @@ a:hover {
 
 .userDetails .one-post .mainview {
     width: 600px;
-    height: 585px;
+   padding-top: 628px;
 }
 
 .userDetails .one-post .left span {
@@ -711,7 +733,7 @@ a:hover {
     }
     .userDetails .one-post .mainview {
         width: 100%;
-        height: 366px;
+        padding-top: 366px;
     }
     .userDetails .one-post .details {
         width: 100%;
@@ -724,7 +746,7 @@ a:hover {
         padding-right: 20px;
     }
     .userDetails .one-post .mainview {
-        height: 722px;
+        padding-top: 722px;
         width: 394px;
     }
     .userDetails .one-post .details {
@@ -738,7 +760,7 @@ a:hover {
         padding-right: 40px;
     }
     .userDetails .one-post .mainview {
-        height: 722px;
+        padding-top: 711px;
         width: 394px;
     }
     .userDetails .one-post .details {
@@ -752,7 +774,7 @@ a:hover {
         padding-right: 40px;
     }
     .userDetails .one-post .mainview {
-        height: 722px;
+        padding-top: 711px;
         width: 394px;
     }
     .userDetails .one-post .details {
@@ -766,7 +788,7 @@ a:hover {
         padding-right: 40px;
     }
     .userDetails .one-post .mainview {
-        height: 722px;
+        padding-top: 711px;
         width: 394px;
     }
     .userDetails .one-post .details {
@@ -780,7 +802,7 @@ a:hover {
         padding-right: 100px;
     }
     .userDetails .one-post .mainview {
-        height: 722px;
+        padding-top: 711px;
         width: 454px;
     }
     .userDetails .one-post .details {
@@ -794,7 +816,7 @@ a:hover {
         padding-right: 100px;
     }
     .userDetails .one-post .mainview {
-        height: 722px;
+        padding-top: 711px;
         width: 454px;
     }
     .userDetails .one-post .details {
@@ -808,7 +830,7 @@ a:hover {
         padding-right: 100px;
     }
     .userDetails .one-post .mainview {
-        height: 722px;
+        padding-top: 711px;
         width: 577px;
     }
     .userDetails .one-post .details {
@@ -954,79 +976,74 @@ a:hover {
 
 /*-----------------[ Content Of IPS ]--------------- */
 
-.userDetails .content-of-info {
+.content-of-info{
     position: fixed;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    transition: 0.5s;
-    height: 0%;
-    z-index: 1050;
-    overflow: auto;
-    text-align: -webkit-center;
-}
-
-.userDetails .content-of-info .container {
-    margin-top: 20px;
-}
-
-.userDetails .content-of-info table tr td img {
+    bottom:0;
+    left:0;
+    top:0;
+    width:100%;
+      background-color: black;
+      transition: 0.5s;
+      height: 0%;
+      z-index:1050;
+      overflow:auto;
+      text-align: -webkit-center;
+    
+   }
+  
+   .content-of-info .part1{
+    font-size: 18px;
+      margin-top: 13px;
+      color: #b6b6b6bd;
+  }
+   .content-of-info .part2{
+    border: 1px solid #343a40;
+      padding-left: 20px;
+      padding-bottom: 7px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      width: 40%;
+      outline: none;
+  
+  }
+  .content-of-info img{
+    width: 90px;
     border-radius: 50%;
     margin-right: 50px;
-    margin-left: 20px;
+    margin-left: 8px;
+    height: 87px;
     margin-bottom: 20px;
-    width: 45%;
-    height: 35%;
-}
-
-.userDetails .content-of-info table tr td .title {
+  }
+  .content-of-info .title{
     margin-bottom: 1px;
-    font-size: 20px;
-    color: var(--text-secondary);
-}
-
-.userDetails .content-of-info .change-photo-profile {
+      font-size: 20px;
+  }
+  .content-of-info .change-photo-profile{
     border: none;
     outline: none;
-    color: #ffa41b;
+    color: #0095f6;
     font-weight: 700;
     background: 0 0;
     margin-left: -5px;
-    transition: all 0.5s ease-in-out;
-    cursor: pointer;
-}
-
-.userDetails .content-of-info table {
+   transition: all 0.5s ease-in-out;
+   cursor: pointer;
+  }
+  table{
     position: relative;
-    margin-top: -30px;
-}
-
-.userDetails .content-of-info .container form {
-    background: var(--bg-secondary);
+  }
+  .content-of-info form{
+    background-color: #1414184a;
     padding-top: 50px;
     margin-bottom: 40px;
-    padding-bottom: 20px;
+      padding-bottom: 20px;
     border: 1px solid var(--gray-dark);
     width: 60%;
     overflow: hidden;
-    border-radius: 10px;
-}
-
-.userDetails .content-of-info table tr {
+  }
+  .content-of-info table tr{
     height: 40px;
-}
-
-.userDetails .content-of-info table tr td {
-    color: var(--text-secondary);
-}
-
-.userDetails .content-of-info table tr .inputlabel {
-    padding-left: 40px;
-}
-
-.userDetails .content-of-info input {
+  }
+  .content-of-info input{
     width: 300px;
     padding: 5px 15px;
     border: none;
@@ -1034,36 +1051,38 @@ a:hover {
     border-radius: 6px;
     margin-bottom: 10px;
     background: #343a4054;
-    color: var(--text-secondary);
-}
-
-.userDetails .content-of-info input[type='submit'] {
+    color: white;
+  }
+  .content-of-info input[type='submit']{
     width: 100px;
-    margin-top: 10px;
-    text-transform: uppercase;
-    background-color: #ffa41b;
-    color: var(--text-secondary);
-    border: 1px solid #ffa41b;
-    transition: all 0.5s ease-in-out;
-    margin-left: 5px;
-}
-
-.userDetails .content-of-info input[type='submit']:hover {
-    transform: scale(1.1, 1);
-}
-
-/*-----------------[ Responsive Content Info ]--------------- */
-
-@media(max-width:991px) {
-    .userDetails .content-of-info form {
-        border: none;
-        background-color: black;
-        width: 85%
+      margin-top: 10px;
+      text-transform: uppercase;
+      background-color: #ffa41b;
+      color: white;
+      border: 1px solid #ffa41b;
+      transition: all 0.5s ease-in-out;
+      margin-left: 5px;
+  }
+  .content-of-info input[type='submit']:hover{
+   
+    transform: scale(1.1,1);
+   
+  }
+  
+  
+  /* -----------------responsive content info------------------- */
+  @media(max-width:991px){
+    .content-of-info form{
+      border:none;
+      background-color: black;
+     width:85%
     }
-    .userDetails .content-of-info input {
-        width: 224px;
+    .content-of-info input{
+      width: 224px;
+     
     }
-}
+  
+  }
 
 /*************************************************************************/
 
@@ -1148,3 +1167,177 @@ a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+/* ------------------------------------------reservation----------------------------------- */
+.userDetails .reservation{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    text-align: center;
+    overflow: auto;
+    animation: animatezoom 0.6s;
+    z-index: 1099;
+    text-align: -webkit-center;
+}
+.reservation .insurance{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.reservation .insurance label{
+    font-family: cursive;
+    font-size: 19px;
+    color: var(--tab-toggle);
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+.reservation .insurance input[type=text]{
+    padding: 6px 19px;
+    border-radius: 25px;
+    outline: none;
+    font-family: cursive;
+    border: none;
+}
+.reservation .insurance input[type=submit]{
+    padding: 5px 27px;
+  
+    background-color: var(--bg-secondary);
+    color: var(--tab-toggle);
+    outline: none;
+    border: 1px solid var(--tab-toggle);
+    border-radius: 25px;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out;
+    font-family: cursive;
+}
+.reservation .insurance input[type=submit]:hover{
+   color:black;
+   background-color: var(--tab-toggle);
+   border:1px solid var(--tab-toggle);
+}
+.reservation .reserve{
+    text-align: center;
+ 
+   
+}
+.reservation .price{
+    font-size: 40px;
+    font-family: cursive;
+    color: var(--yellow);
+}
+
+.reservation .type-pay{
+    font-family: cursive;
+    font-size: 20px;
+    margin-top: 24px;
+}
+.reservation .booking-date{
+    font-size: 19px;
+    font-family: cursive;
+    margin-bottom: 33px;
+}
+.reservation .reserve input{
+    outline: none;
+    /* width: 77%; */
+    margin-bottom: 11px;
+    padding: 10px 28px;
+    background: 0 0;
+    color: var(--yellow);
+    border: none;
+    border-bottom: 1px solid var(--yellow);
+}
+.reservation .reserve label span{
+    font-size: 18px;
+    font-family: cursive;
+    margin-right: 9px;
+    color: var(--tab-toggle);
+}
+.reservation input[type=date]{
+    background: white;
+    color: black;
+    border-radius: 25px;
+    border-bottom: none;
+    padding: 5px 16px;
+    margin-right: 17px;
+}
+
+.reservation input[type=date]::-webkit-calendar-picker-indicator {
+        /* filter: invert(1); */
+    }
+
+.reservation .paylink{
+    transition: all 0.4s ease-in-out;
+}
+
+.reservation .paycontent{
+    animation: animatezoom 0.6s;
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+.reservation ul{
+    list-style: none;
+    margin-left: -48px;
+}
+.reservation ul li{
+    cursor: pointer;
+}
+.reservation img{
+    width: 6%;
+    margin-bottom: 19px;
+    margin-top: 10px;
+}
+
+.reservation button{
+    background: black ;
+    outline: none;
+    border:1px solid var(--yellow);
+    width: 17%;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: cursive;
+    transition:all 0.5s ease-in-out;
+    color:var(--yellow);
+    padding: 10px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+ 
+}
+.reservation button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .reservation button span:after {
+    content: '\00bb ';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .reservation button:hover span {
+    padding-right: 25px;
+  }
+  
+  .reservation button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* ***********************responsive*************** */
+  @media(max-width:800px){
+    .reservation img{
+        width: 15%;
+    }
+    .reservation button{
+        width: 35%;
+    }
+  }
+
