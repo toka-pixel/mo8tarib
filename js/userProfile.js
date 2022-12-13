@@ -51,9 +51,9 @@ $(document).ready(function () {
 
     //  ----------------------slider for one post---------------------
     let imgObject = [
-        "../images/pro1/pexels-photo-706137.jpeg",
-        "../images/pro1/bed-with-white-bed-sheet-and-pillowcase-set-1267438.jpg",
-        "../images/pro1/background4.jpg", "../images/pro1/photo-1558976825-6b1b03a03719.jpg"
+        "images/pro1/pexels-photo-706137.jpeg",
+        "images/pro1/bed-with-white-bed-sheet-and-pillowcase-set-1267438.jpg",
+        "images/pro1/background4.jpg", "images/pro1/photo-1558976825-6b1b03a03719.jpg"
     ];
     let mainImg = 0;
     let nextImg = 1;
@@ -98,9 +98,9 @@ $(document).ready(function () {
 
     //  ----------------------slider for  saved one post---------------------
     let simgObject = [
-        "../images/user/savedposts/s1.jpg",
-        "../images/user/savedposts/s2.jpg",
-        "../images/user/savedposts/s3.jpg", "../images/user/savedposts/s4.jpg"
+        "images/user/savedposts/s1.jpg",
+        "images/user/savedposts/s2.jpg",
+        "images/user/savedposts/s3.jpg", "images/user/savedposts/s4.jpg"
     ];
     let smainImg = 0;
     let snextImg = 1;

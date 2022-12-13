@@ -224,16 +224,16 @@ var image_traker = 1;
 function changeImg1() {
   var image = document.getElementById('postImages');
   if (image_traker == 1) {
-    image.src = "../images/pro1/background4.jpg";
+    image.src = "images/pro1/background4.jpg";
     image_traker = 2;
   } else if (image_traker == 2) {
-    image.src = "../images/pro1/photo-1558976825-6b1b03a03719.jpg";
+    image.src = "images/pro1/photo-1558976825-6b1b03a03719.jpg";
     image_traker = 3;
   } else if (image_traker == 3) {
-    image.src = "../images/pro1/pexels-photo-706137.jpeg";
+    image.src = "images/pro1/pexels-photo-706137.jpeg";
     image_traker = 4;
   } else {
-    image.src = "../images/pro1/bed-with-white-bed-sheet-and-pillowcase-set-1267438.jpg";
+    image.src = "images/pro1/bed-with-white-bed-sheet-and-pillowcase-set-1267438.jpg";
     image_traker = 1;
   }
 }
@@ -243,19 +243,19 @@ function changeImg1() {
 function changeImg2() {
   var image2 = document.getElementById('postImages2');
   if (image_traker == 1) {
-    image2.src = "../images/pro1/photo-1569428047118-ae9338065103.jpg";
+    image2.src = "images/pro1/photo-1569428047118-ae9338065103.jpg";
     image_traker = 2;
   } else if (image_traker == 2) {
-    image2.src = "../images/pro1/photo-1541194577687-8c63bf9e7ee3.jpg";
+    image2.src = "images/pro1/photo-1541194577687-8c63bf9e7ee3.jpg";
     image_traker = 3;
   } else if (image_traker == 3) {
-    image2.src = "../images/pro1/photo-1572177215152-32f247303126.jpg";
+    image2.src = "images/pro1/photo-1572177215152-32f247303126.jpg";
     image_traker = 4;
   } else if (image_traker == 4) {
-    image2.src = "../images/pro1/photo-1506730447-7683abca8434.jpg";
+    image2.src = "images/pro1/photo-1506730447-7683abca8434.jpg";
     image_traker = 5;
   } else {
-    image2.src = "../images/pro1/pexels-photo-1879061.jpeg";
+    image2.src = "images/pro1/pexels-photo-1879061.jpeg";
     image_traker = 1;
   }
 }
@@ -264,9 +264,9 @@ function changeImg2() {
 
 //  For First Image Post That Transfer Between Images When 
 //  Click On The Next And Previous Icon      
-var arr = new collection(["../images/pro1/pexels-photo-706137.jpeg",
-  "../images/pro1/bed-with-white-bed-sheet-and-pillowcase-set-1267438.jpg",
-  "../images/pro1/background4.jpg", "../images/pro1/photo-1558976825-6b1b03a03719.jpg"
+var arr = new collection(["images/pro1/pexels-photo-706137.jpeg",
+  "images/pro1/bed-with-white-bed-sheet-and-pillowcase-set-1267438.jpg",
+  "images/pro1/background4.jpg", "images/pro1/photo-1558976825-6b1b03a03719.jpg"
 ]);
 
 function collection(postImages) {
@@ -297,11 +297,11 @@ function collection(postImages) {
 
 // For Second Image Post That Transfer Between Images When 
 //  Click On The Next And Previous Icon   
-var arr2 = new collection2(["../images/pro1/photo-1506730447-7683abca8434.jpg",
-  "../images/pro1/pexels-photo-1879061.jpeg",
-  "../images/pro1/photo-1569428047118-ae9338065103.jpg",
-  "../images/pro1/photo-1541194577687-8c63bf9e7ee3.jpg",
-  "../images/pro1/photo-1572177215152-32f247303126.jpg"
+var arr2 = new collection2(["images/pro1/photo-1506730447-7683abca8434.jpg",
+  "images/pro1/pexels-photo-1879061.jpeg",
+  "images/pro1/photo-1569428047118-ae9338065103.jpg",
+  "images/pro1/photo-1541194577687-8c63bf9e7ee3.jpg",
+  "images/pro1/photo-1572177215152-32f247303126.jpg"
 ]);
 
 function collection2(postImages2) {

@@ -53,10 +53,10 @@ function fopentab(tabname) {
 
 // slider for pending one post
 var images = [
-    "../images/flat/pendingposts/p4.jpg", 
-    "../images/flat/pendingposts/p1.jpg", 
-    "../images/flat/pendingposts/p2.jpg",
-    "../images/flat/pendingposts/p3.jpg"
+    "images/flat/pendingposts/p4.jpg", 
+    "images/flat/pendingposts/p1.jpg", 
+    "images/flat/pendingposts/p2.jpg",
+    "images/flat/pendingposts/p3.jpg"
 ];
 var number = 0;
 var len = images.length;
@@ -97,10 +97,10 @@ ploadgallery();
 
 // slider for deleted one post
 var images2 = [
-    "../images/user/savedposts/s2.jpg",
-    "../images/user/savedposts/s1.jpg",
-    "../images/user/savedposts/s3.jpg",
-    "../images/user/savedposts/s4.jpg"
+    "images/user/savedposts/s2.jpg",
+    "images/user/savedposts/s1.jpg",
+    "images/user/savedposts/s3.jpg",
+    "images/user/savedposts/s4.jpg"
 ];
 var number2 = 0;
 var len = images2.length;
